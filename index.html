@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    
+  <head>
+      <meta charset="UTF-8">
+  </head>
+   <body>
+<input id="miInput" type="text">
+<button id="miBoton">Enviar</button>
+
+<script>
+  const boton = document.getElementById('miBoton');
+  const input = document.getElementById('miInput');
+
+  boton.addEventListener('click', () => {
+    const valor = input.value;
+    localStorage.setItem('miValor', valor);
+  });
+</script>
+</body>
+```
+</html>
